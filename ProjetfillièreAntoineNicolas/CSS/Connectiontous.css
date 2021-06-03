@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+
+    background-color: #00263D ;
+}
+
+h1{
+   
+    text-align: center;
+    color: #F5C14F;
+    font-size: 4em;
+    margin-left: 8%;
+    font-family: 'Dancing Script', cursive;
+    
+}  
+ 
+.blanc{color: #F0F1FF;}
+
+.star{
+  color: #F0F1FF;
+  font-size: 1em;
+  margin-left: 10%;
+}
+
+.width100{width: 100%;}
+  
+.aligne{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.aligne input{
+ padding: 5%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+  }
+/* a {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+  margin-top: 4rem;
+ 
+} */
+img {
+  max-width: 100%;
+}
+.btn-inscription {
+padding: .6rem 1rem;
+}
+
+.mascottes {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left: 2%;
+  
+}
+.mascottes div {
+  width: 50%;
+  
+}
+.block{
+
+  font-size: 2.5em;
+}
+.bouton{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 8%;
+}
+.wrapper{
+  display: inline-flex;
+ 
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15%;
+}
+.wrapper .option{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #0069d9;
+  background: #0069d9;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+.emotes{
+  width: 20%;
+  display: flex;
+  margin-left: 85%;
+}
+

@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+
+ background-color: #00263D ;
+}
+
+h1{
+   
+ text-align: center;
+ margin-top: -30vh;
+ color: #00263D;
+ font-size: 4em;
+ font-family: 'Dancing Script', cursive;
+}
+.block{
+  
+ left: auto;
+}
+.lune{
+width: 35%;
+}
+
+.width100{width: 100%;}
+
+label{
+   
+  text-align: center;
+  margin-top: 20vh;
+  color: #00263D;
+  font-size: 2em;
+}
+
+input{
+    
+  text-align: center;
+   margin-top: 1rem;
+}
+
+.aligne{
+  text-align: center;
+margin-top: 5.5rem;
+}
+a {
+  margin-top: 6rem;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+img {
+  max-width: 100%;
+}
+
+.mascottes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mascottes div {
+  width: 50%;
+}
