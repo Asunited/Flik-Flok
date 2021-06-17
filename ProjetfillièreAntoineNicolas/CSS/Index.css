@@ -1,20 +1,116 @@
-h1{
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ body{
+ 
+  background-color: #00263D ;
+ }
+ 
+ h1{
+    
+  text-align: center;
+  margin-top: -30vh;
+  color: #00263D;
+  font-size: 4em;
+  font-family: 'Dancing Script', cursive;
+ }
+ h2{
+text-align: center;
+margin-top: 2vh;
+color: #00263D;
+font-size: 2em;
+font-family: 'Dancing Script', cursive;
+
+ }
+ .block{
+   
+  left: auto;
+ }
+ 
+ 
+ .width100{width: 100%;}
+ 
+ label{
+    
+   text-align: center;
+   margin-top: 20vh;
+   color: #00263D;
+   font-size: 2em;
+ }
+ 
+ input{
+     
+   text-align: center;
+    margin-top: 7rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+ }
+ 
+ .aligne{
+   text-align: center;
+ margin-top: 4.5rem;
+ }
+ a {
     position: relative;
-  left: 80px;
-  top: 10px;
- color: green;
-
-
-}
-.block{
-   background-color: rgb(234, 194, 75);
-   width: 800px;
-   height: 800px;
-
-}
-
-.width100{
-
-width: 100%;
-
-}
+    top: 15vh;
+    left: 25%;
+    transform: translate(-50%, -50%);
+ }
+ button{
+   margin-top: 3rem;
+   padding: 0.5rem;
+   border: 2px solid white;
+   border-radius: 15px;
+   font-size: 2rem;
+   color: white;
+   background-color: transparent;
+ }
+ img {
+   max-width: 100%;
+ }
+ 
+ .mascottes {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 8rem;
+ }
+ .mascottes div {
+   width: 50%;
+ }
+ @media all and (min-width: 485px) {
+   a{
+    left: 42%;
+   }
+   
+ }
+ 
+ @media all and (min-width: 612px){
+   a {
+      left: 44%; 
+     }
+   button{
+     padding: 1rem;
+  
+   }   
+   input{
+     margin-top: 8rem;
+     padding: 1rem 2rem;
+   }
+   .lune{
+     width: 80%;
+     margin-left: 10%;
+   }
+   .mascottes{
+     margin-top: 2rem;}
+ }
+ 
+ @media all and (min-width: 777px){  
+   a{
+   left: 45%;  
+   }  
+ }

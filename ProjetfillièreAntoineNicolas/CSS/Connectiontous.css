@@ -27,6 +27,14 @@ h1{
   font-size: 1em;
   margin-left: 10%;
 }
+input{
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;
+}
+
 
 .width100{width: 100%;}
   
@@ -41,7 +49,12 @@ h1{
 .aligne input{
  padding: 5%;
 }
-
+button{  
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: white;
+  background-color: transparent;}
 
 main {
     display: flex;
@@ -157,3 +170,14 @@ input[type="radio"]{
   margin-left: 85%;
 }
 
+
+@media all and (min-width: 1225px){
+  .wrapper{ 
+  width: 1225px;
+  }
+ }
+@media all and (min-width: 758px){
+  .wrapper{
+    width: 770px;
+  }
+}

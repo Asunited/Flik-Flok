@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+.width100{width: 100%;}
+body{
+
+    background-color: #00263D ;
+}
+h1{
+   
+    text-align: center;
+    color: #F5C14F;
+    font-size: 3em;
+    margin-left: 8%;
+    font-family: 'Dancing Script', cursive;
+    
+} 
+.acces{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  } 
+ p{
+    color: #F0F1FF;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+ }
+ input{
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    padding: 3%;
+ }
+ button{
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+  }
+.bouton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 8%;
+ }  
+ .emote1{
+  width: 15%;
+ }
+ 

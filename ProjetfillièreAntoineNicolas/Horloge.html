@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ProjetfillièreAntoineNicolas/CSS/Horloge.css">
+    <link rel="stylesheet" href="./CSS/Horloge.css">
     <title>Clock timer</title>
 </head>
 <body>
     <div class="bandeau width100">
         <div class="emotes width100">
-            <a href="page-compte"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
-            <a href="page-parametre"><img src="Image/svg/002-parametres-gear.png"></a>
+            <a href="./Compte.html"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
+            <a href="./Paramètres.html"><img src="Image/svg/002-parametres-gear.png"></a>
         </div>
          <h1>Clock Timer</h1>
     </div>
@@ -22,20 +22,21 @@
         <h2>Niveaux 1</h2>
     </div>
     <div class="montre ">
-        <img src="/ProjetfillièreAntoineNicolas/imagehorloge/aiguilles/horloge 10h00.png">
+        <div id="hor" class="horloge"></div>
     </div>
     <div class="block">
         <div class="choix1 ">
-            <img src="./imagehorloge/numériques/numerique22h12.png">
+            <div id="montre"></div>
         </div>
         <div class="choix2">
-            <img src="./imagehorloge/numériques/numérique 10h00.jpg">
+            <div id="montre1"></div>
         </div>
     </div>    
         <div class="choix3 ">
-            <img src="./imagehorloge/numériques/numérique2h30.jpg">
+            <div id="montre2"></div>
         </div>
     
     
+    <script type="text/javascript" src="./javascript/jeux-horloge.js"></script>
 </body>
 </html>

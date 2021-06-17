@@ -43,14 +43,11 @@ input{
    background-color: transparent;
 }
 
-.aligne{
-  text-align: center;
-margin-top: 4.5rem;
-}
+
 a {
 	position: relative;
-   top: 5vh;
-	left: 40%;
+   top: 20vh;
+	left: 20%;
 	transform: translate(-50%, -50%);
 }
 button{
@@ -69,7 +66,7 @@ img {
 .mascottes {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 10rem;
 }
 .mascottes div {
   width: 50%;

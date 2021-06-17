@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+  
+   background-color: #00263D ;
+  }
+  
+  h1{
+     
+   text-align: center;
+   
+   color: #f5c14f;
+   font-size: 4em;
+   font-family: 'Dancing Script', cursive;
+  }
+  .block{
+    
+   left: auto;
+  }
+  
+  
+  .width100{width: 100%;}
+  
+  label{
+     
+    text-align: center;
+    margin-top: 20vh;
+    color: #00263D;
+    font-size: 2em;
+  }
+  
+  input{
+      
+    text-align: center;
+     margin-top: 7rem;
+     border: 2px solid white;
+     border-radius: 15px;
+     font-size: 1.5rem;
+     color: white;
+     background-color: transparent;
+  }
+  
+ 
+  a {
+      position: relative;
+     top: 5vh;
+      left: 10%;
+      transform: translate(-50%, -50%);
+  }
+  button{
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  .mascottes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  .mascottes div {
+    width: 50%;
+  }
+  @media all and (min-width: 485px) {
+    a{
+     left: 42%;
+    }
+    
+  }
+  
+  @media all and (min-width: 612px){
+    a {
+       left: 44%; 
+      }
+    button{
+      padding: 1rem;
+   
+    }   
+    input{
+      margin-top: 8rem;
+      padding: 1rem 2rem;
+    }
+   
+    .mascottes{
+      margin-top: 2rem;}
+  }
+  
+  @media all and (min-width: 777px){  
+    a{
+    left: 45%;  
+    }  
+  }
