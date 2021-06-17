@@ -40,21 +40,8 @@ h1{
     background-color: transparent;
     padding: 3%;
  }
- button{
-    margin-top: 1.5rem;
-    padding: 0.5rem;
-    border: 2px solid white;
-    border-radius: 15px;
-    font-size: 2rem;
-    color: white;
-    background-color: transparent;
-  }
-.bouton{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: 8%;
- }  
+ 
+ 
  .emote1{
   width: 20%;
 }
