@@ -34,8 +34,10 @@ h1{
     margin-left: 85%;
     display: flex;
     margin-top: 5%;
-    
 
+}
+.horloge{
+background-image: url(../imagehorloge/aiguilles/horloge10h00.png);
 }
 .montre{
     width: 50%;

@@ -55,13 +55,12 @@ font-family: 'Dancing Script', cursive;
    text-align: center;
  margin-top: 4.5rem;
  }
- a {
-    position: relative;
-    top: 15vh;
-    left: 25%;
-    transform: translate(-50%, -50%);
- }
+ 
  button{
+  position: relative;
+  top: 15vh;
+  left: 48%;
+  transform: translate(-50%, -50%);
    margin-top: 3rem;
    padding: 0.5rem;
    border: 2px solid white;

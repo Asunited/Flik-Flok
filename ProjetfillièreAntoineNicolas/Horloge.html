@@ -22,21 +22,75 @@
         <h2>Niveaux 1</h2>
     </div>
     <div class="montre ">
-        <div id="hor" class="horloge"></div>
+        
+        <img src="imagehorloge/aiguilles/horloge10h00.png">
     </div>
     <div class="block">
         <div class="choix1 ">
-            <div id="montre"></div>
+            <script>
+                function toggleImage(){
+                let resultss = 8.43
+                if (resultss == 0) {
+                result = 'positive';
+                console.log(result)
+                } else {
+                result = 'NOT positive';
+                console.log(result)
+                }
+                return resultss;
+        
+                console.log(resultss)
+                }
+    
+            </script>
+            <img src="imagehorloge/numériques/numérique8h43.jpg"  onclick="toggleImage();"/>
         </div>
         <div class="choix2">
-            <div id="montre1"></div>
+            <script>
+                function toggleImage(){
+ 
+                let resulta = 10;
+                
+                if (resulta == 0) {
+                result = 'positive';
+                console.log(result)
+                } else {
+                result = 'NOT positive';
+                console.log(result)
+                }
+                return resulta;
+        
+                console.log(resulta)
+                 
+                }
+    
+            </script>
+            
+            <img src="imagehorloge/numériques/numérique10h00.jpg" id="Imag" onclick="toggleImage();"/>
         </div>
     </div>    
         <div class="choix3 ">
-            <div id="montre2"></div>
+            <script>
+                function toggleImage(){
+                let results = 12.30;
+        
+                if (results == 0) {
+                result = 'positive';
+                console.log(result)
+                } else {
+                result = 'NOT positive';
+                console.log(result)
+                }
+                return results;
+        
+                console.log(results)
+                }
+    
+            </script>
+            <img src="imagehorloge/numériques/numérique12h30.png" id="Ima" onclick="toggleImage();"/>
         </div>
     
     
-    <script type="text/javascript" src="./javascript/jeux-horloge.js"></script>
+    
 </body>
 </html>
