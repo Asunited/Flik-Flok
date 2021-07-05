@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/Horloge.css">
+    <link rel="stylesheet" href="./CSS/Horloge2.css">
     <title>Clock timer</title>
 </head>
 <body>
@@ -28,11 +28,11 @@
         }
         </script>
     <div class="h2">
-        <h2>Niveaux 1</h2>
+        <h2>Niveaux 2</h2>
     </div>
     <div class="montre ">
         
-        <img src="imagehorloge/aiguilles/horloge10h00.png">
+        <img src="./imagehorloge/aiguilles/horloge12h00.jpg">
     </div>
     <div class="block">
         <div class="choix1 ">
@@ -54,45 +54,9 @@
             </script>
             <img src="imagehorloge/numériques/numérique8h43.jpg"  onclick="togglImage();"/>
         </div>
-        <div class="choix2">
-            <script>
-                function toggeImage(){
- 
-                let resulta = 10;
-                
-                if (resulta == 10) {
-                    var modal = document.getElementById("myModal");
-                    var btn = document.getElementById("myBtn");
-                    var span = document.getElementsByClassName("close")[0];
-                    btn.onclick = function() {modal.style.display = "block";}
-                    span.onclick = function() {modal.style.display = "none";}
-                    window.onclick = function(event) {
-                    if (event.target == modal) {
-                    modal.style.display = "none";}
-}
-                } else {
-                result = 'NOT positive';
-                console.log(result)
-                }
-                return resulta;
-        
-                console.log(resulta)
-                 
-                }
     
-            </script>
-            
-            <img src="imagehorloge/numériques/numérique10h00.jpg" id="myBtn" onclick="toggeImage();"/>
-            <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Bravo</p>
-               <form action="horloge2.html" ><button>Niveaux suivant</button></form>
-              </div>
-            
-            </div>
-   </div>  
-        <div class="choix3 ">
+       
+        <div class="choix2 ">
             <script>
                 function toggleImage(){
                 let results = 12.30;
@@ -111,6 +75,43 @@
     
             </script>
             <img src="imagehorloge/numériques/numérique12h30.png" id="Ima" onclick="toggleImage();"/>
+        </div>
+    <div class="choix3 ">
+        <script>
+            function toggeImage(){
+
+            let resulta = 10;
+            
+            if (resulta == 10) {
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function() {modal.style.display = "block";}
+                span.onclick = function() {modal.style.display = "none";}
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";}
+}
+            } else {
+            result = 'NOT positive';
+            console.log(result)
+            }
+            return resulta;
+    
+            console.log(resulta)
+             
+            }
+
+        </script>
+        
+        <img src="./imagehorloge/numériques/numérique12h00.png" id="myBtn" onclick="toggeImage();"/>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Bravo</p>
+           <from action= 'horloge2' ><button>Niveaux suivant</button></from>
+          </div>
+        
         </div>
     
     
