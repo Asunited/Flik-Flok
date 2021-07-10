@@ -20,7 +20,9 @@ h1{
   
  left: auto;
 }
-
+a { 
+  text-decoration: none;
+}
 
 .width100{width: 100%;}
 
@@ -53,7 +55,7 @@ a {
 	left: 40%;
 	transform: translate(-50%, -50%);
 }
-button{
+.btn{
   margin-top: 1.5rem;
   padding: 0.5rem;
   border: 2px solid white;
@@ -61,6 +63,9 @@ button{
   font-size: 2rem;
   color: white;
   background-color: transparent;
+  margin-left: -2%;
+  margin-right: 75%;
+  text-align: center;
 }
 img {
   max-width: 100%;
@@ -85,7 +90,7 @@ img {
   a {
      left: 44%; 
     }
-  button{
+  .btn{
     padding: 1rem;
  
   }   

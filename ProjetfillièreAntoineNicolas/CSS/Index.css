@@ -3,6 +3,9 @@
    margin: 0;
    box-sizing: border-box;
  }
+ a { 
+  text-decoration: none;
+}
  body{
  
   background-color: #00263D ;
@@ -56,10 +59,10 @@ font-family: 'Dancing Script', cursive;
  margin-top: 4.5rem;
  }
  
- button{
+ .bouton{
   position: relative;
   top: 15vh;
-  left: 48%;
+  left: 9rem;
   transform: translate(-50%, -50%);
    margin-top: 3rem;
    padding: 0.5rem;
@@ -68,6 +71,9 @@ font-family: 'Dancing Script', cursive;
    font-size: 2rem;
    color: white;
    background-color: transparent;
+   margin-left: 15%;
+   margin-right: 20%;
+   text-align: center;
  }
  img {
    max-width: 100%;
@@ -92,7 +98,7 @@ font-family: 'Dancing Script', cursive;
    a {
       left: 44%; 
      }
-   button{
+   .bouton{
      padding: 1rem;
   
    }   

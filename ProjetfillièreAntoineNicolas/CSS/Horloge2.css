@@ -154,10 +154,17 @@ cursor: pointer;
 button{  
 border: 2px solid white;
 border-radius: 15px;
-font-size: 2rem;
+font-size: 1.5rem;
 color: white;
 background-color: transparent;}
 p{
     font-size: 100px;
     color: #f5c14f;
 }
+.mascottes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2.5rem;
+    width: 50%;
+    margin-left: 55%;
+  }

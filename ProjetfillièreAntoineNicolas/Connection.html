@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Connection.css">
     
-   
     
 </head>
 <body>
@@ -18,14 +17,11 @@
     <div class="block">
         <h1>Flik Flok</h1>
         <form action="./acceuil-jeux.html">
-            
-            
-       
         <div class="aligne">
-            <input type="text" name="Nom" placeholder="Nom pour l'aventure" required>
+            <input type="text" name="Nom" id="pseudo" placeholder="Nom pour l'aventure" required>
         </div> 
         <div>
-           <a> <button>Jeux</button></a>
+           <a href="./acceuil-jeux.html"><div class="btn" id="jeux">Jouer</div></a>
             
             <div class="mascottes">
               <div><img src="Image/mascottebleu.png"></div> 
@@ -33,5 +29,14 @@
             </div>
         </form>
           </div>
+<script>
+    let pseudo = document.getElementById('pseudo')
+    jeux = document.getElementById('jeux')
+    jeux.addEventListener('click', () => {
+    const player = pseudo.value
+
+    localStorage.setItem('pseudo', JSON.stringify(player))})
+    
+</script>
 </body>
 </html>

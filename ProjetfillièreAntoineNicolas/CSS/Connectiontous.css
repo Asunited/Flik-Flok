@@ -4,7 +4,11 @@
   box-sizing: border-box;
   
 }
-
+a { 
+  text-decoration: none;
+  padding: 15%;
+  text-align: center;
+}
 body{
 
     background-color: #00263D ;
@@ -49,7 +53,7 @@ input{
 .aligne input{
  padding: 5%;
 }
-button{  
+.btn{  
   border: 2px solid white;
   border-radius: 15px;
   font-size: 2rem;

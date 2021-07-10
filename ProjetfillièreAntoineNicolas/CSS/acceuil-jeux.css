@@ -45,12 +45,13 @@
   
  
   a {
+    text-decoration: none;
       position: relative;
      top: 5vh;
-      left: 10%;
       transform: translate(-50%, -50%);
+      text-align: center;
   }
-  button{
+  .btn1{
     margin-top: 1.5rem;
     padding: 0.5rem;
     border: 2px solid white;
@@ -58,6 +59,10 @@
     font-size: 2rem;
     color: white;
     background-color: transparent;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    
   }
   img {
     max-width: 100%;
@@ -82,7 +87,7 @@
     a {
        left: 44%; 
       }
-    button{
+    .btn1{
       padding: 1rem;
    
     }   

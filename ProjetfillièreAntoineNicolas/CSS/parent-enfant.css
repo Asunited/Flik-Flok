@@ -46,9 +46,12 @@ input{
 
 a {
 	position: relative;
-   top: 20vh;
+  top: 20vh;
 	left: 20%;
 	transform: translate(-50%, -50%);
+  text-decoration: none;
+  padding: 15%;
+  text-align: center;
 }
 button{
   margin-top: 1.5rem;

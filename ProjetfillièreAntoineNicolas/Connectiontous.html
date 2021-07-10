@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/Connectiontous.css">
     
-   
-    
-</head>
+<head>
 <body>
   
  <main>
@@ -25,8 +23,7 @@
   <h1>Flik Flok </h1>
   <div class="block width100">
     <form action="">
-
-    
+ 
     <div class="wrapper">
       <input type="radio" name="select" id="option-1" checked>
       <input type="radio" name="select" id="option-2">
@@ -51,15 +48,29 @@
     Click Here
   </button>
 -->
-  <div class="bouton" class="width100">
-    <button>Inscription</button>
-  </div>
+  <a href="./acceuil-jeux.html"><div class="btn" id="inscri" class="width100">Inscription
+  </div></a>
 
   <div class="mascottes width100">
     <div><img src="Image/mascottebleu.png"></div> 
     <div><img src="Image/mascotterouge.png"></div>
   </div>
-</form>
+
  </main>
+ <script defer>
+  let prenom = document.getElementById('Prenom')
+  let nom = document.getElementById('Nom')
+  let mail = document.getElementById('Adresse-mail')
+  let inscription = document.getElementById('inscri')
+  console.log(inscription)
+
+inscription.addEventListener('click', () => {
+ const parent = {
+     Prenom: prenom.value,
+      Nom: nom.value,
+     eMail: mail.value,
+ }
+localStorage.setItem('Parent', JSON.stringify(parent))})
+</script>
 </body>
 </html>

@@ -6,8 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/Horloge.css">
     <title>Clock timer</title>
+    <script>
+        var startTime = 0
+        var start = 0
+        var end = 0
+        var diff = 0
+        var timerID = 0
+        
+        function chrono(){
+            end = new Date()
+            diff = end - start
+            diff = new Date(diff)
+            var msec = diff.getMilliseconds()
+            var sec = diff.getSeconds()
+            var min = diff.getMinutes()
+            var hr = diff.getHours()-1
+            if (min < 10){
+                min = "0" + min
+            }
+            if (sec < 10){
+                sec = "0" + sec
+            }
+            if(msec < 10){
+                msec = "00" +msec
+            }
+            else if(msec < 100){
+                msec = "0" +msec
+            }
+            document.getElementById("chronotime").value = hr + ":" + min + ":" + sec + ":" + msec
+            timerID = setTimeout("chrono()", 10)
+        }
+        function Login(){
+            
+            document.chronoForm.reset.onclick = chronoReset
+            start = new Date()
+            chrono()
+        }
+        function chronoContinue(){
+            document.chronoForm.startstop.value = "stop!"
+            document.chronoForm.reset.onclick = chronoReset
+            start = new Date()-diff
+            start = new Date(start)
+            chrono()
+        }
+        function chronoReset(){
+            document.getElementById("chronotime").value = "0:00:00:000"
+            start = new Date()
+        }
+        function chronoStopReset(){
+            document.getElementById("chronotime").value = "0:00:00:000"
+            document.chronoForm.startstop.onclick = Login
+        }
+        function chronoStop(){
+            document.chronoForm.startstop.value = "start!"
+            document.chronoForm.startstop.onclick = chronoContinue
+            document.chronoForm.reset.onclick = chronoStopReset
+            clearTimeout(timerID)
+        }
+        window.addEventListener("load", Login);
+                  </script>
 </head>
 <body>
+    <input type="text" name="chronotime" id="chronotime" value="0:00:00:00"/>
+      
     <div class="bandeau width100">
         <div class="emotes width100">
             <a href="./Compte.html"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
@@ -18,7 +79,7 @@
     
     <div class="opposer popup"  onclick="myFunction()"><img  src="./Image/interrogation orange.png">>
         
-        <span class="popuptext" id="myPopup">Le but du jeux est de trouver l'heure indiquer sur la grosse horloge au dessus</span>
+        <span class="popuptext" id="myPopup">Le but du jeux est de trouver l'heure indiquée sur la grosse horloge au dessus, double click sur la bonne réponse</span>
     </div>
     <script>
         
@@ -38,6 +99,7 @@
         <div class="choix1 ">
             <script>
                 function togglImage(){
+                   
                 let resultss = 8.43
                 if (resultss == 10) {
                 result = 'positive';
@@ -55,43 +117,65 @@
             <img src="imagehorloge/numériques/numérique8h43.jpg"  onclick="togglImage();"/>
         </div>
         <div class="choix2">
-            <script>
-                function toggeImage(){
- 
-                let resulta = 10;
+            <form name="chronoForm">
+                <img src="imagehorloge/numériques/numérique10h00.jpg" id="myBtn" name="startstop" value="start!" onclick="toggeImage();"/>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Bravo</p>
+                    <ul id="scores"></ul>
+                   <a href="./horloge2.html" ><div class="btn-nv2">Niveaux suivant</div></a>
+                   <div class="mascottes">
+                   <div><img src="Image/mascottebleu.png"></div> </div>
+                  </div>
                 
-                if (resulta == 10) {
+                </div>
+       </div>  
+            <script>
+                  let nbrscore = document.getElementById('scores')
+                  let score = 0
+                function scores(){ 
+                    if (diff.getSeconds() <= 3){
+                    score = '50'
+                    nbrscore.innerHTML = score
+                    console.log(score)
+                    } 
+                    if(diff.getSeconds() >3 & diff.getSeconds() <= 10){
+                    score = '25'
+                    nbrscore.innerHTML = score
+                    console.log(score)
+                    }
+                    if(diff.getSeconds() > 10){
+                    score = '10'
+                    nbrscore.innerHTML = score
+                    console.log(score)
+                    }
+                    
+                }
+                function toggeImage(){
                     var modal = document.getElementById("myModal");
                     var btn = document.getElementById("myBtn");
                     var span = document.getElementsByClassName("close")[0];
-                    btn.onclick = function() {modal.style.display = "block";}
+                    modal.style.display = 'block';
                     span.onclick = function() {modal.style.display = "none";}
-                    window.onclick = function(event) {
-                    if (event.target == modal) {
-                    modal.style.display = "none";}
-}
-                } else {
-                result = 'NOT positive';
-                console.log(result)
-                }
-                return resulta;
+                    /*window.onclick = function(event) {
+                     if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                        
+                    }*/
+                chronoStop()
         
-                console.log(resulta)
-                 
+                
                 }
+                
+                //scores = document.getElementById('scoress')
+             
     
             </script>
             
-            <img src="imagehorloge/numériques/numérique10h00.jpg" id="myBtn" onclick="toggeImage();"/>
-            <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Bravo</p>
-               <form action="horloge2.html" ><button>Niveaux suivant</button></form>
-              </div>
             
-            </div>
-   </div>  
+           
         <div class="choix3 ">
             <script>
                 function toggleImage(){
@@ -110,9 +194,10 @@
                 }
     
             </script>
-            <img src="imagehorloge/numériques/numérique12h30.png" id="Ima" onclick="toggleImage();"/>
+            <img src="imagehorloge/numériques/numérique12h30.png" id="Ima" value="start!" onclick="toggleImage();"/>
         </div>
-    
+    </form>
+         
     
     
 </body>
