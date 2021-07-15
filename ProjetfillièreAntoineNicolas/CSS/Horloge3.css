@@ -55,7 +55,7 @@ background-image: url(../imagehorloge/aiguilles/horloge10h00.png);
    
 }
 .choix2{
-    width: 50%;
+    width: 60%;
     margin-top: 70%;
     
     justify-content: end;
@@ -181,5 +181,4 @@ p{
     display: flex;
      width: 8%;
      margin-top: -8%;
-   }
- 
+}
