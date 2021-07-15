@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/Horloge2.css">
+    <link rel="stylesheet" href="./CSS/Horloge3.css">
     <title>Clock timer</title>
     <script>
         var startTime = 0
@@ -36,7 +36,6 @@
             document.getElementById("chronotime").value = hr + ":" + min + ":" + sec + ":" + msec
             timerID = setTimeout("chrono()", 10)
         }
-
         function Login(){
             
             document.chronoForm.reset.onclick = chronoReset
@@ -83,12 +82,11 @@
 </head>
 <body>
     <form name="chronoForm" name="chronotime" id="chronotime">
-   
       
     <div class="bandeau width100">
         <div class="emotes width100">
             <a href="./Compte.html"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
-            <a href="./Paramètres.html"><img src="./Image/svg/002-parametres-gear.png"></a>
+            <a href="./Paramètres.html"><img src="Image/svg/002-parametres-gear.png"></a>
         </div>
         <div class="home width100">
             <a href="./acceuil-jeux.html"><img src="./Image/svg/accueil.png"></a>
@@ -108,14 +106,15 @@
         }
         </script>
     <div class="h2">
-        <h2>Niveaux 2</h2>
+        <h2>Niveaux 3</h2>
     </div>
+    
     <div class="montre ">
         
-        <img src="./imagehorloge/aiguilles/horloge12h00-removebg-preview.png">
+        <img src="./imagehorloge/aiguilles/horloge7h00-removebg-preview.png">
     </div>
     <div class="block">
-        <div class="choix1 ">
+        <div class="choix1 width100">
             <script>
                 function togglImage(){
                    
@@ -133,9 +132,38 @@
                 }
     
             </script>
-            <img src="./imagehorloge/numériques/numerique17h38-removebg-preview.png"  onclick="togglImage();"/>
+            <img src="./imagehorloge/numériques/numerique21h48-removebg-preview.png"  onclick="togglImage();"/>
         </div>
-           
+        <div class="choix2 width100">
+            
+                <img src="./imagehorloge/numériques/numérique7h00-removebg-preview.png" id="myBtn" name="startstop" value="start!" onclick="toggeImage();"/>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Bravo</p>
+                    <ul id="scores"></ul>
+                   <a href="./Horloge4.html" ><div class="btn-nv2">Niveau suivant</div></a>
+                   <div class="mascottes">
+                   <div><img src="Image/mascottebleu.png"></div> </div>
+                  </div>
+                
+                </div>
+       </div>  
+            <script>
+                   function toggeImage(){
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    modal.style.display = 'block';
+                    span.onclick = function() {modal.style.display = "none";}
+                   
+                chronoStop()
+                scores()
+                
+                }
+    
+            </script>
+    
         <div class="choix3 ">
             <script>
                 function toggleImage(){
@@ -154,37 +182,10 @@
                 }
     
             </script>
-            <img src="./imagehorloge/numériques/numerique2h03.png" id="Ima" value="start!" onclick="toggleImage();"/>
+            <img src="./imagehorloge/numériques/numériques12h08-removebg-preview.png" id="Ima" value="start!" onclick="toggleImage();"/>
         </div>
-        <div class="choix2">
-            <form name="chronoForm">
-                <img src="./imagehorloge/numériques/numérique12h00-removebg-preview-removebg-preview.png" id="myBtn" name="startstop" value="start!" onclick="toggeImage();"/>
-                <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Bravo</p>
-                    <ul id="scores"></ul>
-                   <a href="./horloge3.html" ><div class="btn-nv2">Niveau suivant</div></a>
-                   <div class="mascottes">
-                   <div><img src="./Image/mascotterouge.png"></div> </div>
-                  </div>
-                
-                </div>
-       </div>  
-            <script>
-                   function toggeImage(){
-                    var modal = document.getElementById("myModal");
-                    var btn = document.getElementById("myBtn");
-                    var span = document.getElementsByClassName("close")[0];
-                    modal.style.display = 'block';
-                    span.onclick = function() {modal.style.display = "none";}
-                   
-                chronoStop()
-                scores()
-                
-                }
- 
-            </script>
+    </form>
+         
 <script>
     resultat = document.getElementById('myBtn'),
     resultat.addEventListener('click', () => {
@@ -194,16 +195,15 @@
         console.log(getScore)
         let scoreTotal = {
             total1: getScore.total1,
-            total2: score,
-            total3: getScore.total3,
+            total2:  getScore.total2,
+            total3: score,
             total4: getScore.total4
         }
         console.log(scoreTotal)
         localStorage.setItem('score', JSON.stringify(scoreTotal))
     })
-                
+        
 </script>
-    </form>
-          
+    
 </body>
 </html>

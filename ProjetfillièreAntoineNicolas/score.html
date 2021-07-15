@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/score.css">
+    <title>Scores</title>
+</head>
+<body>
+    <div class="emotes width100">
+        <a href="./Compte.html"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
+        <a href="./Paramètres.html"><img src="Image/svg/002-parametres-gear.png"></a>
+    </div>
+    <div class="home width100">
+        <a href="./acceuil-jeux.html"><img src="./Image/svg/accueil.png"></a>
+    </div>
+    <h1>Scores</h1>
+    <h2>Clock timer</h2>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Niveaux 1</th>
+            <th scope="col">Niveaux 2</th>
+            <th scope="col">Niveaux 3</th>
+            <th scope="col">Niveaux 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><div id="total1"></div></th>
+            <td><div id="total2"></div></td>
+            <td><div id="total3"></div></td>
+            <td><div id="total4"></div></td>
+            
+          </tr>
+        
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Score Total</th>
+            <td colspan="2"><div id="calcul"></div></td>
+          </tr>
+        </tfoot>
+      </table>
+      <script>
+          let score = localStorage.getItem('score')
+          score = JSON.parse(score)
+          total1.innerHTML=`${score.total1}`
+          total2.innerHTML=`${score.total2}`
+          total3.innerHTML=`${score.total3}`
+          total4.innerHTML=`${score.total4}`
+          
+        let cal = document.getElementById('calcul')
+        let sT = parseInt(score.total1) + parseInt(score.total2) + parseInt(score.total3) + parseInt(score.total4)
+        cal.innerHTML = `${sT}`
+      </script>
+</body>
+</html>

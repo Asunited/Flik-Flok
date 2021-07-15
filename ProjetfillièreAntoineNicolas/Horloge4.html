@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/Horloge2.css">
+    <link rel="stylesheet" href="./CSS/Horloge4.css">
     <title>Clock timer</title>
     <script>
         var startTime = 0
@@ -36,7 +36,6 @@
             document.getElementById("chronotime").value = hr + ":" + min + ":" + sec + ":" + msec
             timerID = setTimeout("chrono()", 10)
         }
-
         function Login(){
             
             document.chronoForm.reset.onclick = chronoReset
@@ -83,18 +82,18 @@
 </head>
 <body>
     <form name="chronoForm" name="chronotime" id="chronotime">
-   
       
     <div class="bandeau width100">
         <div class="emotes width100">
             <a href="./Compte.html"><img class="emote1" src="Image/svg/001-avatar.png" ></a>
-            <a href="./Paramètres.html"><img src="./Image/svg/002-parametres-gear.png"></a>
+            <a href="./Paramètres.html"><img src="Image/svg/002-parametres-gear.png"></a>
         </div>
         <div class="home width100">
             <a href="./acceuil-jeux.html"><img src="./Image/svg/accueil.png"></a>
         </div>
          <h1>Clock Timer</h1>
     </div>
+    
     
     <div class="opposer popup"  onclick="myFunction()"><img  src="./Image/interrogation orange.png">>
         
@@ -108,13 +107,44 @@
         }
         </script>
     <div class="h2">
-        <h2>Niveaux 2</h2>
+        <h2>Niveaux 4</h2>
     </div>
+    
     <div class="montre ">
         
-        <img src="./imagehorloge/aiguilles/horloge12h00-removebg-preview.png">
+        <img src="./imagehorloge/aiguilles/horloge18h50-removebg-preview.png">
     </div>
     <div class="block">
+        <div class="choix2">
+            
+                <img src="./imagehorloge/numériques/18h50-removebg-preview (1).png" id="myBtn" name="startstop" value="start!" onclick="toggeImage();"/>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Bravo tu as finit le jeux , regarde tes scores</p>
+                    <ul id="scores"></ul>
+                   <a href="./score.html" ><div class="btn-nv2">Scores</div></a>
+                   <div class="mascottes">
+                   <div><img src="./Image/mascotterouge.png"></div> </div>
+                  </div>
+                
+                </div>
+       </div>  
+            <script>
+                   function toggeImage(){
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("myBtn");
+                    var span = document.getElementsByClassName("close")[0];
+                    modal.style.display = 'block';
+                    span.onclick = function() {modal.style.display = "none";}
+                   
+                chronoStop()
+                 scores()
+                
+                }
+
+    
+            </script>
         <div class="choix1 ">
             <script>
                 function togglImage(){
@@ -135,7 +165,7 @@
             </script>
             <img src="./imagehorloge/numériques/numerique17h38-removebg-preview.png"  onclick="togglImage();"/>
         </div>
-           
+          
         <div class="choix3 ">
             <script>
                 function toggleImage(){
@@ -154,56 +184,28 @@
                 }
     
             </script>
-            <img src="./imagehorloge/numériques/numerique2h03.png" id="Ima" value="start!" onclick="toggleImage();"/>
+            <img src="./imagehorloge/numériques/numerique12h40-removebg-preview.png" id="Ima" value="start!" onclick="toggleImage();"/>
         </div>
-        <div class="choix2">
-            <form name="chronoForm">
-                <img src="./imagehorloge/numériques/numérique12h00-removebg-preview-removebg-preview.png" id="myBtn" name="startstop" value="start!" onclick="toggeImage();"/>
-                <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Bravo</p>
-                    <ul id="scores"></ul>
-                   <a href="./horloge3.html" ><div class="btn-nv2">Niveau suivant</div></a>
-                   <div class="mascottes">
-                   <div><img src="./Image/mascotterouge.png"></div> </div>
-                  </div>
-                
-                </div>
-       </div>  
-            <script>
-                   function toggeImage(){
-                    var modal = document.getElementById("myModal");
-                    var btn = document.getElementById("myBtn");
-                    var span = document.getElementsByClassName("close")[0];
-                    modal.style.display = 'block';
-                    span.onclick = function() {modal.style.display = "none";}
-                   
-                chronoStop()
-                scores()
-                
-                }
- 
-            </script>
-<script>
-    resultat = document.getElementById('myBtn'),
-    resultat.addEventListener('click', () => {
-        const scor = score.value
-        let getScore = localStorage.getItem('score')
-        getScore = JSON.parse(getScore)
-        console.log(getScore)
-        let scoreTotal = {
-            total1: getScore.total1,
-            total2: score,
-            total3: getScore.total3,
-            total4: getScore.total4
-        }
-        console.log(scoreTotal)
-        localStorage.setItem('score', JSON.stringify(scoreTotal))
-    })
-                
-</script>
     </form>
-          
+         
+    <script>
+        resultat = document.getElementById('myBtn'),
+        resultat.addEventListener('click', () => {
+            const scor = score.value
+            let getScore = localStorage.getItem('score')
+            getScore = JSON.parse(getScore)
+            console.log(getScore)
+            let scoreTotal = {
+                total1: getScore.total1,
+                total2:  getScore.total2,
+                total3:  getScore.total3,
+                total4: score
+            }
+            console.log(scoreTotal)
+            localStorage.setItem('score', JSON.stringify(scoreTotal))
+        })
+            
+    </script>
+    
 </body>
 </html>

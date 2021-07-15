@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+a { 
+    text-decoration: none;
+}
 img {
     max-width: 100%;
   }
@@ -46,21 +49,28 @@ background-image: url(../imagehorloge/aiguilles/horloge10h00.png);
     margin: 15% 25%;
 }
 .choix1{
-    margin-top: 45%;
+    margin-top: 70%;
     width: 30%;
    
 }
 .choix2{
-    width: 35%;
-    margin-top: 45%;
+    width: 30%;
+    margin-top: 50%;
     
     justify-content: end;
 }
 .choix3{
     width: 30%;
-    margin-top: 70%;
+   margin-top: 45%;
     justify-content: center;
 }
+.mascottes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2.5rem;
+    width: 50%;
+    margin-left: 55%;
+  }
 .block{
     display: flex;
    justify-content: space-around;
@@ -161,22 +171,15 @@ cursor: pointer;
     padding: 1rem;
     text-align: center;
     }
+
 p{
-    font-size: 100px;
+    font-size: 40px;
     color: #f5c14f;
-}
-.mascottes {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -2.5rem;
-    width: 50%;
-    margin-left: 55%;
-  }
-  a { 
-    text-decoration: none;
+   
 }
 .home{
-   display: flex;
-    width: 8%;
-    margin-top: -8%;
-  }
+    display: flex;
+     width: 8%;
+     margin-top: -8%;
+   }
+ 

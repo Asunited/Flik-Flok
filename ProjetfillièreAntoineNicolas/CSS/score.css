@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a { 
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+  }
+body{background-color: #00263D ;}
+.bandeau{
+    background-color: #f5c14f;
+    margin: 0;
+    padding: 0;
+
+}
+.width100{width: 100%;}
+
+h1{
+   
+    text-align: center;
+    color: #f5c14f;
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+   }
+
+.home{
+    display: flex;
+     width: 8%;
+     margin-top: -8%;
+   }
+h2{
+    
+    color: #f5c14f;
+    font-size: 1.5em;
+   margin-top: 5%;
+}
+.emotes{
+    width: 15%;
+    display: flex;
+    margin-left: 85%;
+  }
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #00263D;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  thead, tfoot {
+    
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid #00263D;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #70baff;
+  }
+  
+ 
+
+  
+  table {
+    background-color: #ed6153;
+  }
+  caption {
+    font-family: 'Rock Salt', cursive;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+ 
