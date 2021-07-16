@@ -47,17 +47,17 @@ background-image: url(../imagehorloge/aiguilles/horloge10h00.png);
 }
 .choix1{
     margin-top: 45%;
-    width: 30%;
+    width: 35%;
    
 }
 .choix2{
-    width: 35%;
+    width: 30%;
     margin-top: 45%;
     
     justify-content: end;
 }
 .choix3{
-    width: 30%;
+    width: 40%;
     margin-top: 70%;
     justify-content: center;
 }

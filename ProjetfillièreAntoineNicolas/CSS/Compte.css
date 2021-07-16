@@ -48,4 +48,16 @@ h1{
  .emote1{
   width: 20%;
 }
+.btn-inscription{
+  text-align: center;
+  margin-top: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: white;
+    background-color: transparent;
+    margin-left: 35%;
+    margin-right: 15%;
+}
  

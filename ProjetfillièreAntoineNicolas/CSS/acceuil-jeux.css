@@ -66,8 +66,9 @@
   }
   img {
     max-width: 100%;
+    
   }
-  
+
   .mascottes {
     display: flex;
     flex-wrap: wrap;

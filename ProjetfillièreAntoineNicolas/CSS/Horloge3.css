@@ -50,20 +50,20 @@ background-image: url(../imagehorloge/aiguilles/horloge10h00.png);
     
 }
 .choix1{
-    margin-top: 50%;
-    width: 30%;
+    margin-top: 40%;
+    width: 40%;
    
 }
 .choix2{
-    width: 60%;
-    margin-top: 70%;
+    width: 35%;
+    margin-top: 75%;
     
     justify-content: end;
 }
 .choix3{
     width: 40%;
     
-    margin-top: 45%;
+    margin-top: 40%;
     justify-content: center;
 }
 .mascottes {
