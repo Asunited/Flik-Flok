@@ -96,5 +96,24 @@ table {
     color: #666;
     text-align: right;
     letter-spacing: 1px;
+}
+@media all and (min-width: 612px){
+.montre{
+      width: 40%;
+      margin-top: 5%;
+      margin-left: 29%;
   }
- 
+h1{
+    margin-top: -10%;
+      font-size: 2rem;
+  }
+h2{
+    
+  font-size: 1rem;
+  text-align: center;
+
+}
+th, td{
+    width: 5%;
+  }
+}

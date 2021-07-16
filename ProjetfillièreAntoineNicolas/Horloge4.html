@@ -25,7 +25,7 @@
     
     <div class="opposer popup"  onclick="myFunction()"><img  src="./Image/interrogation orange.png">>
         
-        <span class="popuptext" id="myPopup">Le but du jeux est de trouver l'heure indiquée sur la grosse horloge au dessus, double click sur la bonne réponse</span>
+        <span class="popuptext" id="myPopup">Le but du jeu est de trouver l'heure indiquée sur la grosse horloge au dessus, double click sur la bonne réponse</span>
     </div>
     <div class="h2">
         <h2>Niveaux 4</h2>
@@ -42,7 +42,7 @@
                 <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Bravo tu as finit le jeux , regarde tes scores</p>
+                    <p>Bravo tu as finit le jeu , regarde tes scores</p>
                     <ul id="scores"></ul>
                    <a href="./score.html" ><div class="btn-nv2">Scores</div></a>
                    <div class="mascottes">
@@ -55,11 +55,31 @@
         <div class="choix1 ">
 
             <img src="./imagehorloge/numériques/numerique17h38-removebg-preview.png"  onclick="togglImage();"/>
+            <div id="myModa" class="moda">
+                <div class="moda-content">
+                    <span class="close">&times;</span>
+                    <p>Perdu</p>
+                    <ul id="scores"></ul>
+                   <a href="./Horloge4.html"><div class="btn-nv2">Recommence</div></a>
+                   <div class="mascottes">
+                   <div><img src="./Image/mascotterouge.png"></div> </div>
+                  </div>
+            </div>
         </div>
           
         <div class="choix3 ">
 
             <img src="./imagehorloge/numériques/numerique12h40-removebg-preview.png" id="Ima" value="start!" onclick="toggleImage();"/>
+            <div id="myModa" class="moda">
+                <div class="moda-content">
+                    <span class="close">&times;</span>
+                    <p>Perdu</p>
+                    <ul id="scores"></ul>
+                   <a href="./Horloge4.html" ><div class="btn-nv2">Recommence</div></a>
+                   <div class="mascottes">
+                   <div><img src="./Image/mascotterouge.png"></div> </div>
+                  </div>
+                </div>
         </div>
     </form>
 <script src="./javascript/horloge4.js"></script>

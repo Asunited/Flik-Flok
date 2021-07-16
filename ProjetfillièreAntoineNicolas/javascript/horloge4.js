@@ -85,7 +85,10 @@ chronoStop()
 
 }
 function togglImage(){
-                   
+    var modal = document.getElementById("myModa");
+    var btn = document.getElementById("myBt");
+    var span = document.getElementsByClassName("clos")[0];
+    modal.style.display = 'block';               
     let resultss = 8.43
     if (resultss == 10) {
     result = 'positive';
@@ -99,8 +102,11 @@ function togglImage(){
     console.log(resultss)
 }
 function toggleImage(){
+    var modal = document.getElementById("myModa");
+    var btn = document.getElementById("myBt");
+    var span = document.getElementsByClassName("clos")[0];
+    modal.style.display = 'block';
     let results = 12.30;
-
     if (results == 10) {
     result = 'positive';
     console.log(result)
