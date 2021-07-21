@@ -101,8 +101,12 @@ chronoStop()
 scores()
 
 }
+var modal = document.getElementById("myModa");
+function closRecommence() {
+    modal.style.display = 'none'
+}
 function toggleImage(){
-    var modal = document.getElementById("myModa");
+    
     var btn = document.getElementById("myBt");
     var span = document.getElementsByClassName("clos")[0];
     modal.style.display = 'block';

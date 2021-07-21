@@ -21,7 +21,7 @@ console.log(localStorage.getItem('fakeID'))
  }else {
    localStorage.getItem('fakeID')= 'negatif'
    console.log(localStorage.getItem('fakeID'))
-voix.textContent = "le compte n'est pas trouver veuillez recommencer"
+   voix.textContent = "le compte n'est pas trouvé veuillez recommencer"
  }
 
 }
